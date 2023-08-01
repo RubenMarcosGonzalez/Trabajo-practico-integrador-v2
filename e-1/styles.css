@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace ;
+    scroll-behavior:smooth;
+}
+
+
+/* Estilos del header */
+
+.cont-header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px;  
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 80px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.cont-imagen{
+    width: 65px;
+    height: 65px;
+        
+}
+
+.logo{
+    width: 100%;
+    
+}
+
+.cont-nav{
+    flex-grow: 1;
+}
+
+.cont-nav a{
+    padding: 0 5px;
+    text-decoration: none;
+    font-size: 15.3px;
+    
+}
+
+.inicio{
+    color: #1f1f1f;
+}
+
+.proyecto{
+    color: #7b7a88;
+}
+
+.inp-buscar{
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(100, 102, 102, 0.301);
+    outline: none;  
+    margin-right: 5px;    
+}
+
+.inp-buscar:focus{    
+    box-shadow: 1px 1px 5px 2px #007bffec;
+    transition: 0.5s;
+}
+
+.cont-b{
+    margin-right: 20px;
+    
+}
+
+.buscar{
+    padding: 9px 15px;
+    border-radius: 8px;
+    border: 0.1px solid rgba(15, 15, 15, 0.616);  
+    background-color: #f8f9fa ;
+    font-size: 15.5px;
+}
+
+.buscar:hover{
+    background-color: black;
+    color: #f8f9fa;
+}
+
+/* Estilos primera seccion */
+
+.cont-section-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-image: url(img/programming.webp);
+    width: 100%;
+    height: 80vh;
+    
+   
+}
+
+.cont-section-1 h1{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/* Estilos sub titulo */
+.sub-titulo{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+
+/* Estilos segunda seccion */
+
+.cont-section-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 0;
+    margin: 10px;
+    place-items: center;
+    justify-content: space-evenly;   
+}
+
+/* Estilos contenedor proyectos */
+
+.cont-proyectos{
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px 8px rgba(167, 186, 199, 0.432);
+    background-color: #f0ebe3;         
+}
+
+.cont-proyectos img{
+    width: 95%;
+    display: block;
+    margin: auto;
+}
+
+.cont-proyectos h3{
+    text-align: center;
+    padding: 20px 20px 15px;
+    font-size: 25px;
+    font-weight: 500;
+} 
+
+.cont-proyectos p{    
+    display: block;
+    margin: auto;
+    padding: 10px 10px 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    width: 100%;    
+}
+
+/* Estilo contenedor Botones */
+
+.cont-botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;    
+}
+
+/* Estilo Botones */
+
+.boton{
+    padding: 10px 30px;
+    border: 1px solid rgb(45, 46, 46);
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* Estilos Formulario */
+
+.formulario{
+    display: flex;
+    flex-direction: column;   
+    background-color: #f2f2f2; 
+    margin: 50px 0;
+}
+
+.cont-info{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 40%;
+}
+.contacto{
+    text-align: center;
+    padding: 50px;
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+.etiqueta{
+    padding: 5px;
+    margin: 10px 30px 0 30px;
+    font-size: 15px;
+}
+
+.email{
+    padding: 7px;
+    margin: 0 35px;
+    font-size: 15px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgba(100, 102, 102, 0.301);
+}
+
+.email:focus {
+    box-shadow: 1px 1px 5px 2px rgb(62, 146, 202);
+    transition: 0.5s;
+}
+
+.texto{
+    padding: 10px;
+    margin: 0 35px;
+    font-size: 15px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgba(100, 102, 102, 0.301);
+}
+
+.texto:focus {
+    box-shadow: 1px 1px 5px 2px rgb(62, 146, 202);
+    transition: 0.5s;
+}
+
+.cont-enviar{
+    display: flex;
+    width: 145px;
+    margin-left: 35px;
+    padding: 20px 0;
+}
+.enviar{
+    padding: 8px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: rgb(87, 81, 81);
+}
+
+/* Estilos pie de pagina */
+.espacio{
+    background-color: rgba(100, 102, 102, 0.301);
+    padding: 0.5px;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+
+.cont-opciones{
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 800px;
+}
+
+.datos{
+    flex-grow: 1;
+}
+
+.proyectos, .consultas , .parrafo {
+    width: 400px;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+
+.descripcion{
+    padding: 20px 0;
+}
+
+.parrafo{
+    font-size: 13px;
+    color: #212529;
+    padding: 10px 0;
+}
+
+.proyectos a, .consultas a{
+    padding: 8px 0;
+    color: #212529;
+}
+
+.Copyright{
+    background-color: #f2f2f2;
+    padding: 40px;
+    text-align: center;
+}
+
+.Copyright h6{
+    font-size: 13px;
+    font-weight: 300;
+    display: inline;
+    letter-spacing: 2px;
+   
+}
+
+.Copyright a{
+    color: #212529;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Estilo Responsiv */
+
+@media (max-width: 1200px){
+    .cont-section-2{
+       grid-template-columns: repeat(2, 1fr);
+    }
+   
+    .footer{
+       justify-content: space-around;
+       width: 100%;
+   
+    }
+    .cont-opciones{
+       width: 500px;
+    }
+   }
+   
+   @media (max-width: 800px){
+       .cont-section-2{
+           grid-template-columns: 1fr;
+        }
+   
+        .proyectos, .consultas , .parrafo {
+           width: 300px;
+                   
+       }
+   
+       .cont-info{
+           width: 400px;
+       }
+   
+       .descripcion{
+           padding: 10px 0;
+       }
+   
+        .cont-opciones{
+           flex-direction: column;
+           align-items: center;
+           
+        }
+   
+        .parrafo{
+           font-size: 13px;
+           color: #212529;
+           padding-top: 10px;
+       }
+   
+        .footer{
+           align-self: center;
+           text-align: center;
+        }
+   }
+
